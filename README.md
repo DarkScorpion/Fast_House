@@ -8,7 +8,7 @@ The program is written in the built-in scripting language Lua, api to control th
 
 [compcraft]: http://www.computercraft.info/
 [turtleAPI]: http://computercraft.info/wiki/Turtle_%28API%29
-[s1]: ./screenshots/1.jpg
-[s2]: ./screenshots/2.jpg
-[s3]: ./screenshots/3.jpg
-[s4]: ./screenshots/4.jpg
+[s1]: /screenshots/1.jpg
+[s2]: /screenshots/2.jpg
+[s3]: /screenshots/3.jpg
+[s4]: /screenshots/4.jpg
