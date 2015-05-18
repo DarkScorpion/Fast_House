@@ -2,23 +2,24 @@
   The MIT License (MIT)
   Copyright (c) 2015 Александр Смит (https://github.com/DarkScorpion)
   
-  Tortle build house from 2 material and glass panel
-  Need 3 stack of wall material
-       3 stack glass panel
-       5 stack of roof materials
-       1000 fueld in turtle
+  Tortle build house from 2 material and glass panel.
+  Need 3 stack of wall material,
+       3 stack glass panel,
+       5 stack of roof materials,
+       1000 fueld in turtle.
   (!)Need place wall material in 1 slot, panel in 2, roof material in 3.
-  (!)Materials to supplement slots 4-16 in any order
+  (!)Materials to supplement slots 4-16 in any order.
 ]]
 -- config data
-_width = 15
-_length = 19
+local _width = 15
+local _length = 19
 
-_slotStone = 1
-_slotGlass = 2
-_slotRoof = 3
+local _slotStone = 1
+local _slotGlass = 2
+local _slotRoof = 3
 
-_fillStartSlot = 4
+local _fillStartSlot = 4
+local _fillEndSlot = 16
 -- end config data
 
 function fillMaterial(slot)
@@ -27,7 +28,7 @@ function fillMaterial(slot)
   end
 
   turtle.select(slot)
-  for i=_fillStartSlot, 16 do
+  for i=_fillStartSlot, _fillEndSlot do
     if turtle.compareTo(i) then
       if turtle.getItemCount(i) > turtle.getItemSpace(slot) then
         turtle.select(i)
